@@ -3,11 +3,10 @@ const images = ["images/MISSILE228.full.2868896.jpg", "images/MISSILE228.full.29
 
 const scrollSpeed = 500; // pixel per update
 const queueLength = 3; // image num in queue
-const updateInterval = 1000; // millisecond update interval
+const updateInterval = 10000; // millisecond update interval
 
 document.addEventListener('DOMContentLoaded', function() {
-    const currentBackground = document.getElementById('currentBackground');
-    const nextBackground = document.getElementById('nextBackground');
+    const background = document.getElementById('background');
     let activeImages = [];
     let lastAddedImageIndex = -1;
     let currentPosition = 0;
